@@ -5,7 +5,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
+     
       <div className="App">
+
+       <div>
+          <h1>Weather App</h1>
+        </div>  
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -20,6 +25,8 @@ class App extends Component {
             Learn React
           </a>
         </header>
+
+        
       </div>
     );
   }
