@@ -1,0 +1,12 @@
+en las lambdas de js 
+si se quiere poner más de una línea en la función debemos utilizar los corchetes.
+
+
+
+Crear una app react npx create-react-app my-app
+
+Herramientas para controlar prototype. Validaciones más rápidas. 
+
+ptsr = prop type string requited.
+
+Al validar iniciar con p minuscula.
