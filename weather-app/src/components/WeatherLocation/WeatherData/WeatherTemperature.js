@@ -11,7 +11,7 @@ import {
     FOG,
     LIGHT_WIND,
     CLOUD,
-} from './../constants/weathers';
+} from './../../../constants/weathers';
 
 const getStateIcon = {
     [SUNNY]: "day-sunny",
