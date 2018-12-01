@@ -12,7 +12,7 @@ const WeatherLocation = () => (
     
     
         <WeatherData/>
-        <Location city={"Costa Rica"}/>
+        <Location city={"Nueva Zelanda"}/>
         
      
     </div>
