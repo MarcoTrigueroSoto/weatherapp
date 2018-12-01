@@ -15,8 +15,8 @@ import {
 const WeatherData = () => (
     <div>
         <h2>Weather Data</h2>
-            <WeatherTemparature temparature = {20} 
-             weatherState={FOG}/>
+            <WeatherTemparature temparature = {22} 
+             weatherState={RAIN}/>
             <WeatherExtraInfo humidity={80} wind={"20km"}/>
 
     </div>

@@ -10,9 +10,9 @@ const WeatherLocation = () => (
     <h3>Universidad Nacional de Costa Rica</h3>
     <h3>Portafolio Profesional</h3>
     
-    
-        <WeatherData/>
         <Location city={"Nueva Zelanda"}/>
+        <WeatherData/>
+        
         
      
     </div>

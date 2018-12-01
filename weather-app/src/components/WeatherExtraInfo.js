@@ -3,23 +3,23 @@ import React from 'react';
 const WeatherExtraInfo = ({humidity,wind}) =>(
 <div>
     <span>Información Extra</span>
-        <table>
+        <table border="1px">
             <thead>
              <tr>
                  <th>Humedad</th>
                  <th>Viento</th>
             </tr>
             </thead>
-            <tr>    
-                <td>
-                    <span>{`${humidity} % -`}</span>
-                </td> 
-            <tr>
-                <td>     
-                    <span>{`${wind} `}</span>  
-                </td>
-            </tr>
-            </tr>
+           <tbody>
+             <tr>    
+                    <td>
+                       <span>{`${humidity} % -`}</span>
+                    </td> 
+                    <td>     
+                       <span>{`${wind} `}</span>  
+                  </td>
+                </tr>    
+            </tbody>
     </table>
 </div>
     
