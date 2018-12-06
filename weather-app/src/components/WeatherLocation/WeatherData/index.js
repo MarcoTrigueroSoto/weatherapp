@@ -11,9 +11,11 @@ import {
     FOG,
     LIGHT_WIND,
 } from './../../../constants/weathers';
+import './styles.css';
+
 
 const WeatherData = () => (
-    <div>
+    <div class="weatherDataContent">
         <h2>Weather Data</h2>
             <WeatherTemparature temparature = {22} 
              weatherState={RAIN}/>
