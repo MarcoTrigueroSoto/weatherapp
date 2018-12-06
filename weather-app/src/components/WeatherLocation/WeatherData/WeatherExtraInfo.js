@@ -7,12 +7,12 @@ const WeatherExtraInfo = ({humidity,wind}) =>(
     <span>
         Información 
     </span>
-    
+
         <table className="weatherTableContent" border="1px">
             <thead>
              <tr>
-                 <th>Humedad</th>
-                 <th>Viento</th>
+                 <th className="extraInfoText">Humedad</th>
+                 <th className="extraInfoText">Viento</th>
             </tr>
             </thead>
            <tbody>
@@ -21,7 +21,7 @@ const WeatherExtraInfo = ({humidity,wind}) =>(
                        <span>{`${humidity} % -`}</span>
                     </td> 
                     <td>     
-                       <span>{`${wind} `}</span>  
+                       <span >{`${wind} `}</span>  
                   </td>
                 </tr>    
             </tbody>

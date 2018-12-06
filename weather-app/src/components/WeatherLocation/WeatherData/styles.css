@@ -9,22 +9,23 @@
     background-color: rgb(70, 167, 199); 
     width: 50%;
     display: inline-block;
-    
+    line-height: 28px;
+    text-align: center;
+    padding-top: 1.5%;
 }
-
 
 .weatherTemparatureContent{
     background-color: cornflowerblue;
     display: inline-block;
+    
 }
 
 .weatherTableContent{
     margin: auto;
     display: inline-table;
     margin-top: 5%;
-    
+    margin-left: 10%;   
 }
-
 
 .temparature{
     font-size: 30px;
@@ -42,5 +43,14 @@
 
 
 .wicon{
-margin-bottom: 20%;
+    color: darkblue;
+    margin-bottom: 20%;  
+    padding-top: 4%;  
 }
+
+.extraInfoText{
+    color:  rgb(87, 46, 199);
+    font-size-adjust: 10%;
+    font-weight: bold;
+}
+

@@ -16,3 +16,5 @@ Para evitar conflictos con el css llamarlo con className.
 En react tenemos css-modules
 
 react mete nuestras hojas de estilos propias en boundle.js.
+
+jugar con diseños de css cssmatic csstrick.
