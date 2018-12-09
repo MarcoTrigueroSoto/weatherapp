@@ -7,22 +7,28 @@ import {
     RAINY,
     SNOW, 
     WINDY,
-    RAIN,
     FOG,
     LIGHT_WIND,
+    RAIN,
 } from './../../../constants/weathers';
+
+
 import './styles.css';
 
 
-const WeatherData = () => (
-    <div class="weatherDataContent">
-        <h2>Weather Data</h2>
-            <WeatherTemparature temparature = {22} 
-             weatherState={RAIN}/>
-            <WeatherExtraInfo humidity={80} wind={"20km"}/>
+const WeatherData = ({data}) => {
+    const  {temparature, weatherState, humidity,wind} = data;
+        
+    return  ( <div class="weatherDataContent">
+            <h2>Weather Data</h2>
+            <WeatherTemparature temparature = {temparature} 
+                                weatherState={weatherState}/>
+            <WeatherExtraInfo 
+                            humidity={humidity} 
+                            wind={wind}
+            />
+    </div>);
 
-    </div>
-
-);
+};
 
 export default WeatherData;
