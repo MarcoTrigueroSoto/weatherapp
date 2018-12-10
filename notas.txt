@@ -18,3 +18,21 @@ En react tenemos css-modules
 react mete nuestras hojas de estilos propias en boundle.js.
 
 jugar con diseños de css cssmatic csstrick.
+
+
+en react hay 2 tipos de componentes.
+class component Tienee un metodo render
+Cuando tenemos que utilizar la instancia del ciclo de vida.
+
+
+function component
+
+
+Como pasar de un componente funcional a un componente clase
+usa render.
+
+Poner constructor y super constructor para usar state y los elementos que van dentro
+
+Para cambiar estados usar setStates({});
+
+Usar this para referencia locales usar this.
