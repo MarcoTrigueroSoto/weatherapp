@@ -9,6 +9,11 @@ import {
 
 import './styles.css';
 
+const location = "Upala, CR";
+const api_key ="9615f4b4ea56d013a90f49128a0e289d";
+const url_base_weather = "https://api.openweathermap.org/data/2.5/weather";
+
+const api_weather = `${url_base_weather}?q=${location}&appid=${api_key}`;
 
 const data = {
     temparature: 5,
@@ -36,6 +41,8 @@ class WeatherLocation extends Component {
 
 
     handelUpdateClick = () => {
+        fetch(api_weather);
+
         console.log("Actualizado");
         this.setState({
             city: 'Alemania',

@@ -33,6 +33,22 @@ usa render.
 
 Poner constructor y super constructor para usar state y los elementos que van dentro
 
-Para cambiar estados usar setStates({});
+Para cambiar estados usar setStates({}); solo los datos modificados se pasan.
 
+Herramientas de chrome para react.
 Usar this para referencia locales usar this.
+
+
+Rest api.
+
+key = 9615f4b4ea56d013a90f49128a0e289d
+
+https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={key}
+
+Traer datos del server con fetch.
+
+Promesas.
+Puede estar ahora, en el futuro o nunca.
+
+clase 44
