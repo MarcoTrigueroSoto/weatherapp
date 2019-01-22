@@ -9,11 +9,12 @@ import {
 
 import './styles.css';
 
-const location = "Upala, CR";
+const location = "Heredia, CR";
 const api_key ="9615f4b4ea56d013a90f49128a0e289d";
 const url_base_weather = "https://api.openweathermap.org/data/2.5/weather";
 
 const api_weather = `${url_base_weather}?q=${location}&appid=${api_key}`;
+
 
 const data = {
     temparature: 5,
@@ -22,13 +23,13 @@ const data = {
     wind: '10 m/s',
 }
 
-const data2 = {
+/*const data2 = {
     temparature: 20,
     weatherState: SUNNY,
     humidity: 13,
     wind: '14 m/s',
 }
-
+*/
 class WeatherLocation extends Component {
     
     constructor(){
@@ -38,16 +39,41 @@ class WeatherLocation extends Component {
             data: data,
         }
 }
+    getWeatherState = WeatherData => {
+        return SUNNY;
+    }
+
+    getData = WeatherData =>{
+        const {humidity,temp} = WeatherData.main;
+        const {speed} = WeatherData.wind;
+        const weatherState = this.getWeatherState(WeatherData);
+
+        const data = {
+            humidity,
+            temparature: temp,
+            weatherState,
+            wind: `${speed} m/s`,
+
+        }
+        return data;
+    }
 
 
     handelUpdateClick = () => {
-        fetch(api_weather);
-
-        console.log("Actualizado");
-        this.setState({
-            city: 'Alemania',
-            data: data2,
-        });
+        fetch(api_weather).then(resolve => {
+    
+            return resolve.json();
+        }).then(data => {
+           const new_weatherData = this.getData(data);
+           console.log(new_weatherData);
+           debugger;
+           this.setState({
+               data: new_weatherData
+           });
+         
+        })
+       
+      
     }
 
     
