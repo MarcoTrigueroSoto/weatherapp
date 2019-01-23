@@ -51,4 +51,25 @@ Traer datos del server con fetch.
 Promesas.
 Puede estar ahora, en el futuro o nunca.
 
+forma de una promesa.
+
+let promesa = new Promise ((resolve, rejected) => { 
+setTimeout(() = 
+{
+	resolve("Successful") 
+}, 2000);
+});
+
+console.log("Comienza la promesa");
+
+promesa.then((mensaje) = {
+	console.log(mensaje);
+}).catch((error)=> {
+	console.log(mensaje);
+})
+
+
+
+Fetch es un método muy particular que devuelve una promise
 clase 44
+
