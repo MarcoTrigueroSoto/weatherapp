@@ -3,21 +3,9 @@ import Location from './Location';
 import WeatherData from './WeatherData';
 import {api_weather} from './../../constants/api_weather';
 import transforWeather from './../../Services/transforWeather';
-
-import {
-   SUNNY,
-    RAINY,
-   
-} from './../../constants/weathers';
-
 import './styles.css';
 
-const data = {
-    temparature: 5,
-    weatherState: RAINY,
-    humidity: 10,
-    wind: '10 m/s',
-}
+
 
 class WeatherLocation extends Component {
     
@@ -25,12 +13,20 @@ class WeatherLocation extends Component {
         super();
         this.state= {
             city: "Costa Rica",
-            data: data,
-        }
+            data: null,
+
+        };
+        console.log("Constructor");
 }
+    componentDidMount() {
+     console.log("Did Mount");
+     this.handelUpdateClick();   
+    }
 
-
-
+    componentDidUpdate(prevProps, prevState) {
+    console.log("Update");    
+    }
+    
     handelUpdateClick = () => {
         fetch(api_weather).then(resolve => {
     
@@ -38,28 +34,24 @@ class WeatherLocation extends Component {
         }).then(data => {
            const new_weatherData = transforWeather(data);
            console.log(new_weatherData);
-           debugger;
            this.setState({
                data: new_weatherData
-           });
-         
-        })
-       
-      
+           });     
+        });
     }
 
     
     render(){
         const {city, data} = this.state;
-
+        console.log("render");
         return (<div className="weatherLocationContent">
     
         <h3>Weather Location</h3>
         <Location city={city}/>
-        <WeatherData data={data}/>
-        
-        
-        <button onClick ={this.handelUpdateClick}>Mostrar</button>
+        {data ?
+            <WeatherData data={data}/>:
+            "Cargando..."
+        }
 
         <h3>Marco Triguero Soto</h3>
         <h3>Universidad Nacional de Costa Rica</h3>
