@@ -2,7 +2,14 @@ import convert from 'convert-units';
 
 import {
     SUNNY,
-     RAINY,
+    RAINY,
+    CLOUD,
+    LIGHT_WIND,
+    RAIN,
+    FOG,
+    SNOW,
+    THUNDER,
+    DRIZZLE, 
     
  } from './../constants/weathers';
 
@@ -19,7 +26,7 @@ const   getTemp = kelvin => {
 const   transformWeather = WeatherData =>{
         const {humidity,temp} = WeatherData.main;
         const {speed} = WeatherData.wind;
-        const weatherState = getWeatherState(WeatherData);
+        const weatherState = getWeatherState(WeatherData.);
         const temparature = getTemp(temp);  
         const data = {
             humidity,
