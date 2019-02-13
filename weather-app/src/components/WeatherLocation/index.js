@@ -19,15 +19,9 @@ class WeatherLocation extends Component {
             data: null,
 
         };
-        console.log("Constructor");
 }
     componentDidMount() {
-     console.log("Did Mount");
      this.handelUpdateClick();   
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-    console.log("Update");    
     }
     
     handelUpdateClick = () => {
@@ -47,7 +41,6 @@ class WeatherLocation extends Component {
     
     render(){
         const {city, data} = this.state;
-        console.log("render");
         return (<div className="weatherLocationContent">
     
         <h3>Weather Location</h3>

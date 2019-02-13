@@ -37,7 +37,7 @@ const   getTemp = kelvin => {
         return convert(kelvin).from("K").to("C").toFixed(1);
          
     }    
-    
+     
 const   transformWeather = WeatherData =>{
         const {humidity,temp} = WeatherData.main;
         const {speed} = WeatherData.wind;

@@ -2,31 +2,23 @@ import React from 'react';
 import WeatherIcons from 'react-weathericons';
 import ProTypes from 'prop-types';
 import {
-    CLOUDY,
     SUNNY,
-    RAINY,
+    THUNDER,
     SNOW, 
-    WINDY,
     RAIN,
-    FOG,
-    LIGHT_WIND,
     CLOUD,
+    DRIZZLE,
 } from './../../../constants/weathers';
 import './styles.css';
 
 const getStateIcon = {
     [SUNNY]: "day-sunny",
-    [LIGHT_WIND]: "day-light-wind",
-    [RAINY]: "sleet",
-    [FOG]: "day-fog",
     [SNOW]: "snow",
-    [WINDY]:"windy",
     [RAIN]: "rain",
     [CLOUD]: "cloud",
-    [CLOUDY]: "cloudy"
+    [THUNDER]: "day-thunderstore",
+    [DRIZZLE]: "day-shower",
 };
-
-
 
 const getWeatherIcon = weatherState => {
     const icon = getStateIcon[weatherState];
@@ -54,6 +46,5 @@ WeatherTemparature.proTypes = {
     temparature: ProTypes.number,
     weatherState: ProTypes.string,
 };
-
 
 export default WeatherTemparature;
