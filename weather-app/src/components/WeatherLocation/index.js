@@ -40,8 +40,9 @@ class WeatherLocation extends Component {
 
     
     render(){
+        const {onWeatherLocationClick} = this.props;
         const {city, data} = this.state;
-        return (<div className="weatherLocationContent">
+        return (<div className="weatherLocationContent" onClick={onWeatherLocationClick}>
     
         <h3>Weather Location</h3>
         <Location city={city}/>
@@ -60,6 +61,6 @@ class WeatherLocation extends Component {
 };
 WeatherLocation.PropTypes = {
     city: PropTypes.string.isRequired,
-
+    onWeatherLocationClick: PropTypes.func,
 }
 export default WeatherLocation;

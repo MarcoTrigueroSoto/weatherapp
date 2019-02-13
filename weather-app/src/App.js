@@ -14,7 +14,12 @@ const cities = [
   "Kyoto,jp"
 ];
 
+
 class App extends Component {
+  handleSelectionLocation = (city) => {
+    console.log("handleSelectionLocation");
+  }
+
   render() {
     return (
      
@@ -24,7 +29,10 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
          
-          <LocationList cities={cities}></LocationList>
+          <LocationList cities={cities}
+          onSelectedLocation={this.handleSelectionLocation}>
+            
+          </LocationList>
           
         </header>
 
