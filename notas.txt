@@ -73,3 +73,5 @@ promesa.then((mensaje) = {
 Fetch es un método muy particular que devuelve una promise
 clase 44
 
+clase 66
+Usar keys para optimizar la renderizacion.
