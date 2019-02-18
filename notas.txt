@@ -75,3 +75,10 @@ clase 44
 
 clase 66
 Usar keys para optimizar la renderizacion.
+
+Clase 69
+Media Query. Para establecer tamaños de pantalla en css
+Flexbox. Desplegar tipos de display
+React-Flex-Blox. Librería de react.
+
+
