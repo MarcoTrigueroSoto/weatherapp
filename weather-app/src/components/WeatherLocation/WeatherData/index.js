@@ -8,7 +8,7 @@ import './styles.css';
 const WeatherData = ({ data: {temparature, weatherState, humidity, wind } }) => (
       
     <div className ="weatherDataContent">
-            <h2>Weather Data</h2>
+            <h2>Clima</h2>
             <WeatherTemparature 
                 temparature = {temparature} 
                 weatherState={weatherState}/>

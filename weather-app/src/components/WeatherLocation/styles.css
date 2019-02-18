@@ -5,10 +5,18 @@
     padding: 10px;
     color: lightgreen;
     font-family: cursive;
+    
 }
 
 .weatherLocationContent{
     width: 400px;
-    padding: 15px;
+    padding-left: 5%;
     font-family: 'Roboto', sans-serif;
+    min-height: 60vh;
+}
+
+.Location{
+    position: relative;
+    padding-left: left;
+    margin-inline-start: auto;
 }

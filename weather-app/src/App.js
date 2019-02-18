@@ -42,7 +42,7 @@ class App extends Component {
              </LocationList>
           </Col>  
           <Col> 
-            <div className="details"></div>
+           {/*<div className="details"></div>*/}
           </Col>
         </Row>
               
