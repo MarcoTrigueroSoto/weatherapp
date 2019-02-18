@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import LocationList from './components/LocationList';
-
 import logo from './logo.svg';
 import './App.css';
 
