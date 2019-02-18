@@ -7,6 +7,7 @@ import WeatherData from './WeatherData';
 import transforWeather from './../../Services/transforWeather';
 import './styles.css';
 
+
 class WeatherLocation extends Component {
    
     constructor(props){
@@ -49,11 +50,7 @@ class WeatherLocation extends Component {
         {data ?
             <WeatherData data={data}/>:
             <CirccularProgress/>
-        }
-
-        <h3>Marco Triguero Soto</h3>
-        <h3>Universidad Nacional de Costa Rica</h3>
-        <h3>Portafolio Profesional</h3>    
+        } 
      
     </div>);
     }
