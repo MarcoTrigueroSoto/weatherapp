@@ -5,14 +5,24 @@
     padding: 10px;
     color: lightgreen;
     font-family: cursive;
+    overflow: auto;
     
 }
 
+.Location h1{
+    margin: 0;
+    white-space: nowrap;
+}
+
 .weatherLocationContent{
-    width: 400px;
-    padding-left: 5%;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px; 
+    padding-left: 25px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
     min-height: 60vh;
+    box-shadow: 10px 10px 40px - 12px rgba(0, 0, 0, 0.75)
 }
 
 .Location{

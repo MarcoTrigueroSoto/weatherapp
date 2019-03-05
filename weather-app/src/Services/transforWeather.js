@@ -34,7 +34,7 @@ const   getWeatherState = weather => {
 };
 
 const   getTemp = kelvin => {
-        return convert(kelvin).from("K").to("C").toFixed(1);
+        return convert(kelvin).from("K").to("C").toFixed(0);
          
     }    
      

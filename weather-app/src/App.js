@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import {Grid, Col, Row} from 'react-flexbox-grid';
+import Paper from '@material-ui/core/Paper';
+import AppBar from '@material-ui/core/AppBar';
+import Typography from '@material-ui/core/Typography';
+import Toolbar from '@material-ui/core/Toolbar';
 import logo from './logo.svg';
 import './App.css';
 import LocationList from './components/LocationList';
@@ -10,7 +14,8 @@ const cities = [
   "Cartago, CR",
   "Upala, CR",
   "Bijagua, CR",
-  "Kyoto,jp"
+  "Kyoto,jp",
+  "Paris, FR"
 ];
 
 
@@ -21,15 +26,27 @@ class App extends Component {
 
   render() {
     return (
-      <Grid >
-       <Row>  
-         
-         <Col><img  src={logo} className="App-logo" alt="logo" /> </Col>
+
+        
+       /*  
+         <Col> </Col>
            <Col>   
               <h3>Marco Triguero Soto</h3>
               <h3>Universidad Nacional de Costa Rica</h3>
               <h3>Portafolio Profesional</h3> 
             </Col>
+        </Row>
+       */
+      <Grid > 
+        <Row>
+            <AppBar position='sticky'>
+              <Toolbar>
+                <Typography variant='title' color='inherit'>
+                <img  src={logo} className="App-logo" alt="logo" />
+                  Weather App
+                </Typography>
+              </Toolbar>
+              </AppBar>
         </Row>
         <Row >        
           <Col xs={12} md={6}>
@@ -40,7 +57,8 @@ class App extends Component {
           </Col>
           
           <Col xs={12} md={6}>
-            <div className="details"></div>
+              
+              <div className="details"></div>
           </Col>
         </Row>
       </Grid>

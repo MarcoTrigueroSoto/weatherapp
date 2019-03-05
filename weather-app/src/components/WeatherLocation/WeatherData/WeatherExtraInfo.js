@@ -20,7 +20,7 @@ const WeatherExtraInfo = ({humidity,wind}) =>(
            <tbody>
              <tr>    
                     <td>
-                       <span>{`${humidity} % -`}</span>
+                       <span>{`${humidity} % `}</span>
                     </td> 
                     <td>     
                        <span >{`${wind} `}</span>  

@@ -16,7 +16,7 @@ const getStateIcon = {
     [SNOW]: "snow",
     [RAIN]: "rain",
     [CLOUD]: "cloud",
-    [THUNDER]: "day-thunderstore",
+    [THUNDER]: "day-thunderstorm",
     [DRIZZLE]: "day-shower",
 };
 
