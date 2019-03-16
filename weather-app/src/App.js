@@ -5,7 +5,8 @@ import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
 import logo from './logo.svg';
 import './App.css';
-import LocationList from './components/LocationList';
+import LocationList from './components/LocationList.js';
+import ForecastExtended from './components/ForecastExtended';
 
 const cities = [
   "Heredia, CR",
@@ -17,16 +18,20 @@ const cities = [
   "Paris, FR"
 ];
 
-
 class App extends Component {
-  handleSelectionLocation = (city) => {
-    console.log(`handleSelectionLocation ${city}`);
+  constructor(){
+    super();
+    this.state = {city: null};
   }
 
-  render() {
-    return (
+handleSelectionLocation = (city) => {
+    this.setState({city})
+    console.log(`handleSelectionLocation ${city}`);
+}
 
-        
+render() {
+  const {city} = this.state;  
+  return (        
        /*  
          <Col> </Col>
            <Col>   
@@ -57,7 +62,11 @@ class App extends Component {
           
           <Col xs={12} md={6}>
               
-              <div className="details"></div>
+              <div className="details">
+                  { !city ? <h1>No hay cuidad seleccionada </h1>:  
+                    <ForecastExtended city={city}></ForecastExtended>
+                  }
+              </div>
           </Col>
         </Row>
       </Grid>
