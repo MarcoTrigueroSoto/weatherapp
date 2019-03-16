@@ -81,4 +81,23 @@ Media Query. Para establecer tamaños de pantalla en css
 Flexbox. Desplegar tipos de display
 React-Flex-Blox. Librería de react.
 
+Antes de usar this = algo;  Solo se puede usar en el constructor.
+hay que llamar al super();
+
+Para enlazar eventos.
+this.setState({city})
+
+
+
+constructor (app.js) state = 
+
+modificar el estado es this.setState => nueva render
+
+DOM virtual, revisa los cambios con el original
+y cambia los nuevos.
+
+No disparar el setState al menos que lo necesitemos.
+O se renderiza si se cambia la propiedad.
+
+Control Ciclo de vida del componente shouldComponentUpdate.
 
