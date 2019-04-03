@@ -63,7 +63,7 @@ render() {
           <Col xs={12} md={6}>
               
               <div className="details">
-                  { !city ? <h1>No hay cuidad seleccionada </h1>:  
+                  { city &&   
                     <ForecastExtended city={city}></ForecastExtended>
                   }
               </div>
