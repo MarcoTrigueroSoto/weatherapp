@@ -1,7 +1,6 @@
 .locationContent{
     width: 100%;
-    height: 100%;
-    text-align: center;
+    height: 50%;
     padding: 10px;
     color: lightgreen;
     font-family: cursive;
@@ -15,18 +14,21 @@
 }
 
 .weatherLocationContent{
-    width: calc(100% - 20px);
+    width: 100%;
+    height: 100%;
     margin-left: 10px;
     margin-right: 10px; 
     padding-left: 25px;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     min-height: 60vh;
-    box-shadow: 10px 10px 40px - 12px rgba(0, 0, 0, 0.75)
+    box-shadow: 10px 10px 40px - 12px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
 }
 
 .Location{
     position: relative;
     padding-left: left;
     margin-inline-start: auto;
+    width: calc(100%- 40px);
 }

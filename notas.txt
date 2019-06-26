@@ -25,6 +25,9 @@ class component Tienee un metodo render
 Cuando tenemos que utilizar la instancia del ciclo de vida.
 
 
+
+
+
 function component
 
 
@@ -101,3 +104,24 @@ O se renderiza si se cambia la propiedad.
 
 Control Ciclo de vida del componente shouldComponentUpdate.
 
+Clase 91 
+
+Donde hacer el fetch
+
+- selección de la cuidad
+- forecastextended.
+	constructor
+No es el mejor	ComponentWillMount
+		Fetch === (Promise)
+	Render
+
+		=== Result luego viene el setState(Result)
+
+	Render 
+
+Constructor 
+Render Progreso
+Un poco mejor ComponentDidMount
+	Fetch === (Promise)
+	=== SetState(Result)	
+Render Completo		
