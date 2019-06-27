@@ -7,6 +7,8 @@ import logo from './logo.svg';
 import './App.css';
 import LocationList from './components/LocationList.js';
 import ForecastExtended from './components/ForecastExtended';
+import {setCity} from './actions';
+import {store} from './store';
 
 const cities = [
   "Heredia, CR",
@@ -18,6 +20,7 @@ const cities = [
   "Paris, FR"
 ];
 
+
 class App extends Component {
   constructor(){
     super();
@@ -25,8 +28,12 @@ class App extends Component {
   }
 
 handleSelectionLocation = (city) => {
+
     this.setState({city})
     console.log(`handleSelectionLocation ${city}`);
+
+    store.dispatch(setCity(city));
+  
 }
 
 render() {

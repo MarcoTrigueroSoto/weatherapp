@@ -67,10 +67,11 @@ class ForecastExtended extends Component{
 
         
     }
-}
+};
 
-ForecastExtended.PropTypes = {
+ForecastExtended.propTypes = {
     city: PropTypes.string.isRequired,
-
+    forecastData: PropTypes.array,
 }
+
 export default ForecastExtended;
