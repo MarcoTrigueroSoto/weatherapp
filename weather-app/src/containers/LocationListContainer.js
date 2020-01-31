@@ -6,14 +6,14 @@ import LocationList from './../components/LocationList';
 
 
 class LocationListContainer extends Component {
-    handleSelectionLocation = city => {
+    handleSelectedLocation = city => {
         this.props.setCity(city);
     }
  
     render() {
         return (
             <LocationList cities={this.props.cities}
-            onSelectedLocation={this.handleSelectionLocation}>
+            onSelectedLocation={this.handleSelectedLocation}>
              </LocationList>
         );
     }

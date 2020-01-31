@@ -7,7 +7,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import LocationListContainer from './containers/LocationListContainer';
-import ForecastExtended from './components/ForecastExtended';
+import ForecastExtendedContainer from './containers/ForecastExtendedContainer';
 
 
 
@@ -21,17 +21,9 @@ const cities = [
   "Paris, FR"
 ];
 
-
-
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {city: null};
-}
 
-
-render() {
-  const {city} = this.state;  
+render() { 
   return (        
        /*  
          <Col> </Col>
@@ -61,9 +53,9 @@ render() {
           <Col xs={12} md={6}>
               
               <div className="details">
-                  { city &&   
-                    <ForecastExtended city={city}></ForecastExtended>
-                  }
+                   
+              <ForecastExtendedContainer></ForecastExtendedContainer>
+                 
               </div>
           </Col>
         </Row>
@@ -71,6 +63,5 @@ render() {
     );
   }
 }
-
 
 export default App;
