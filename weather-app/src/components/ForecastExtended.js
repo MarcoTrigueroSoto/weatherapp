@@ -25,7 +25,7 @@ class ForecastExtended extends Component{
         }
     }
     
-    updatecity = city => {
+    updatecity = cities => {
         
         const url_forecast = `${url}?q=${this.props.city}&appid=${api_key}`;
 
